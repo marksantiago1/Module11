@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace mod11
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Product product = new Product(" Ariel ",  2  , "Sachet " , 7.50, 15);
+            Console.WriteLine("Item:" + product.name);
+            Console.WriteLine("Quantity: " + product.quantity);
+            Console.WriteLine("Unit: " + product.unit);
+            Console.WriteLine("Price: " + product.price);
+            Console.WriteLine("Amount: " + product.amount);
+            Console.ReadLine();
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace mod11
+{
+    class Product
+    {
+        public string name;
+        public int quantity;
+        public string unit;
+        public double price;
+        public int amount;
+
+
+        public Product(string name, int quantity, string unit, double price, int amount)
+        {
+            this.name = name;
+            this.quantity = quantity;
+            this.unit = unit;
+            this.price = price;
+            this.amount = amount;
+        }
+    }
+}
